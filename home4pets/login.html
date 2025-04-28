@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Home4Pets</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 Home4Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <button onclick="switchTheme('theme1')">🌞 Light</button>
+                <button onclick="switchTheme('theme2')">🌚 Dark</button>
+                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="container">
+                <div class="login-form-container">
+                    <h2>Login to Your Account 🔐</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <div class="form-options">
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                            </label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                    
+                    <div class="social-login">
+                        <p>Or login with:</p>
+                        <div class="social-buttons">
+                            <button class="social-btn">🐦 Twitter</button>
+                            <button class="social-btn">🔵 Facebook</button>
+                            <button class="social-btn">🔴 Google</button>
+                        </div>
+                    </div>
+                    
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="register.html">Register here</a></p>
+                    </div>
+                </div>
+                
+                <div class="login-benefits">
+                    <h3>Benefits of Logging In:</h3>
+                    <ul>
+                        <li>❤️ Save your favorite pets</li>
+                        <li>📝 Track your adoption applications</li>
+                        <li>🔔 Get notified about new pets</li>
+                        <li>💬 Message our team directly</li>
+                    </ul>
+                    <img src="images/happy-pets.jpg" alt="Happy pets together">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

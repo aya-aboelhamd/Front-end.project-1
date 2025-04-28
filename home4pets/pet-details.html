@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Details - Home4Pets</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+    <link rel="stylesheet" href="styles/pet-details.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 Home4Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <button onclick="switchTheme('theme1')">🌞 Light</button>
+                <button onclick="switchTheme('theme2')">🌚 Dark</button>
+                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pet-details">
+            <div class="container">
+                <div class="pet-images">
+                    <div class="main-image">
+                        <img src="images/dog2-large.jpg" alt="Buddy the Labrador" id="main-pet-image">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="images/dog2-1.jpg" alt="Buddy playing" onclick="changeMainImage(this.src, this.alt)">
+                        <img src="images/dog2-2.jpg" alt="Buddy sleeping" onclick="changeMainImage(this.src, this.alt)">
+                        <img src="images/dog2-3.jpg" alt="Buddy at park" onclick="changeMainImage(this.src, this.alt)">
+                    </div>
+                </div>
+                
+                <div class="pet-info">
+                    <h2>Buddy 🐕</h2>
+                    <p class="breed">Labrador Retriever</p>
+                    <div class="details-grid">
+                        <div>
+                            <h3>Age</h3>
+                            <p>2 years</p>
+                        </div>
+                        <div>
+                            <h3>Gender</h3>
+                            <p>Male</p>
+                        </div>
+                        <div>
+                            <h3>Size</h3>
+                            <p>Large</p>
+                        </div>
+                        <div>
+                            <h3>Color</h3>
+                            <p>Golden</p>
+                        </div>
+                    </div>
+                    
+                    <div class="description">
+                        <h3>About Buddy</h3>
+                        <p>Buddy is a friendly and energetic Labrador who loves playing fetch and going for long walks. He's great with kids and other dogs. Buddy was surrendered to us when his previous owner could no longer care for him. He's fully vaccinated and neutered.</p>
+                    </div>
+                    
+                    <div class="care-info">
+                        <h3>Care Requirements</h3>
+                        <ul>
+                            <li>🏠 Needs a home with a yard</li>
+                            <li>🚶‍♂️ Requires daily exercise</li>
+                            <li>👨‍👩‍👧‍👦 Good with children</li>
+                            <li>🐕 Gets along with other dogs</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn" onclick="showAdoptionForm()">Adopt Me! 🏡</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="adoption-form" id="adoption-form" style="display: none;">
+            <div class="container">
+                <h2>Adoption Application</h2>
+                <form id="pet-adoption-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Pet Experience</label>
+                        <textarea id="experience" name="experience" required placeholder="Tell us about your experience with pets"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="home">Home Environment</label>
+                        <textarea id="home" name="home" required placeholder="Describe your home and yard"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Application</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="similar-pets">
+            <div class="container">
+                <h2>Similar Pets You Might Like</h2>
+                <div class="similar-grid">
+                    <div class="pet-card">
+                        <img src="images/dog3.jpg" alt="Rocky the Bulldog">
+                        <h3>Rocky</h3>
+                        <p>🐕 Bulldog</p>
+                        <p>📍 3 years old</p>
+                        <a href="pet-details.html?id=3" class="btn">View Details</a>
+                    </div>
+                    <div class="pet-card">
+                        <img src="images/dog4.jpg" alt="Daisy the Beagle">
+                        <h3>Daisy</h3>
+                        <p>🐕 Beagle</p>
+                        <p>📍 5 years old</p>
+                        <a href="pet-details.html?id=5" class="btn">View Details</a>
+                    </div>
+                    <div class="pet-card">
+                        <img src="images/dog5.jpg" alt="Max the Golden Retriever">
+                        <h3>Max</h3>
+                        <p>🐕 Golden Retriever</p>
+                        <p>📍 4 years old</p>
+                        <a href="pet-details.html?id=7" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

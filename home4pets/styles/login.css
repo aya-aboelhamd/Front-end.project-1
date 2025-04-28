@@ -1,0 +1,119 @@
+/* Login Page Specific Styles */
+.login-section {
+    padding: 60px 0;
+}
+
+.login-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.login-form-container {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.form-options a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.login-benefits {
+    padding: 30px;
+}
+
+.login-benefits h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.login-benefits ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.login-benefits li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.login-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.login-benefits img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .login-section .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .login-form-container {
+        order: 2;
+    }
+    
+    .login-benefits {
+        order: 1;
+    }
+}

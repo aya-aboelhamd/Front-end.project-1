@@ -1,0 +1,44 @@
+/* Colorful Theme */
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #ff8e8e;
+    --background-color: #f7fff7;
+    --text-color: #292f36;
+    --header-bg: #4ecdc4;
+    --footer-bg: #4ecdc4;
+    --card-bg: #ffffff;
+    --border-color: #ff6b6b;
+    --hover-color: #ffe66d;
+    --active-color: #ff6b6b;
+    --error-color: #ff6b6b;
+    --success-color: #6bff6b;
+}
+
+/* All other styles same as theme1.css */
+
+nav ul li a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.theme-switcher button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.theme-switcher button:hover {
+    background-color: var(--secondary-color);
+}
+
+.card, .pet-card, .testimonial, .login-form-container, .register-form-container {
+    border: 2px solid var(--border-color);
+}

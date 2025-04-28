@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Home4Pets</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 Home4Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <button onclick="switchTheme('theme1')">🌞 Light</button>
+                <button onclick="switchTheme('theme2')">🌚 Dark</button>
+                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h2>Our Story 🐶🐱</h2>
+            </div>
+        </section>
+
+        <section class="mission">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>Home4Pets was founded in 2010 with a simple goal: to connect loving homes with pets in need. We believe every cat and dog deserves a safe, happy home.</p>
+                <img src="images/shelter.jpg" alt="Our shelter facility">
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Team 👩‍⚕️👨‍⚕️</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/vet1.jpg" alt="Dr. Sarah Miller">
+                        <h3>Dr. Sarah Miller</h3>
+                        <p>Head Veterinarian</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/staff1.jpg" alt="John Davis">
+                        <h3>John Davis</h3>
+                        <p>Adoption Coordinator</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/staff2.jpg" alt="Emma Wilson">
+                        <h3>Emma Wilson</h3>
+                        <p>Volunteer Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <h2>By The Numbers 🔢</h2>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Pets Adopted</th>
+                        <th>Volunteers</th>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>342</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>478</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>512</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

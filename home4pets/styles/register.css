@@ -1,0 +1,104 @@
+/* Registration Page Specific Styles */
+.register-section {
+    padding: 60px 0;
+}
+
+.register-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.register-form-container {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.register-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.password-hint {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.password-hint ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.password-hint li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.password-hint li::before {
+    content: "•";
+    position: absolute;
+    left: 5px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.register-benefits {
+    padding: 30px;
+}
+
+.register-benefits h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.register-benefits ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.register-benefits li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.register-benefits li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.register-benefits img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .register-section .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .register-form-container {
+        order: 2;
+    }
+    
+    .register-benefits {
+        order: 1;
+    }
+}

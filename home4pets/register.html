@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Home4Pets</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 Home4Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <button onclick="switchTheme('theme1')">🌞 Light</button>
+                <button onclick="switchTheme('theme2')">🌚 Dark</button>
+                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <div class="container">
+                <div class="register-form-container">
+                    <h2>Create Your Account 🐾</h2>
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="reg-name">Full Name</label>
+                            <input type="text" id="reg-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-phone">Phone Number</label>
+                            <input type="tel" id="reg-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-address">Address</label>
+                            <textarea id="reg-address" name="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">Password</label>
+                            <input type="password" id="reg-password" name="password" required>
+                            <div class="password-hint">
+                                <p>Password must contain:</p>
+                                <ul>
+                                    <li id="length">At least 8 characters</li>
+                                    <li id="number">At least 1 number</li>
+                                    <li id="letter">At least 1 letter</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-confirm">Confirm Password</label>
+                            <input type="password" id="reg-confirm" name="confirm" required>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                    
+                    <div class="login-link">
+                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                    </div>
+                </div>
+                
+                <div class="register-benefits">
+                    <h3>Why Register?</h3>
+                    <ul>
+                        <li>📌 Save your favorite pets for later</li>
+                        <li>⏱️ Faster adoption applications</li>
+                        <li>📧 Get personalized pet recommendations</li>
+                        <li>🎁 Access to special events and discounts</li>
+                        <li>💌 Receive updates on pets you've viewed</li>
+                    </ul>
+                    <img src="images/adoption-success.jpg" alt="Happy adoption story">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

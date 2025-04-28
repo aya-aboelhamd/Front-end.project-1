@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Home4Pets</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 Home4Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pets.html">Pets</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <button onclick="switchTheme('theme1')">🌞 Light</button>
+                <button onclick="switchTheme('theme2')">🌚 Dark</button>
+                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h2>Contact Us 📨</h2>
+                <p>Have questions? Want to volunteer? We'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-methods">
+            <div class="container">
+                <div class="contact-info">
+                    <h3>📞 Call Us</h3>
+                    <p>Main Office: (123) 456-7890</p>
+                    <p>Adoption Line: (123) 456-7891</p>
+                    
+                    <h3>✉️ Email Us</h3>
+                    <p>General Inquiries: info@home4pets.com</p>
+                    <p>Adoptions: adopt@home4pets.com</p>
+                    
+                    <h3>📍 Visit Us</h3>
+                    <p>123 Pet Adoption Lane</p>
+                    <p>Anytown, AT 12345</p>
+                    <p>Open Monday-Saturday 9am-6pm</p>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="adoption">Adoption Question</option>
+                                <option value="volunteer">Volunteering</option>
+                                <option value="donation">Donation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions ❓</h2>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">What are your adoption fees?</button>
+                    <div class="faq-answer">
+                        <p>Our adoption fees vary based on the pet's age and medical needs, typically ranging from $50-$200. This includes spay/neuter, vaccinations, and a microchip.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">What's the adoption process?</button>
+                    <div class="faq-answer">
+                        <p>The process includes an application, interview, home visit (sometimes virtual), and meet-and-greet with the pet. The entire process usually takes 3-7 days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">Can I return a pet if it doesn't work out?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we have a lifetime return policy. If for any reason you can't keep your adopted pet, we'll take them back at any time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

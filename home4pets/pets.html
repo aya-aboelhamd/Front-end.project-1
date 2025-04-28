@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Pets - Home4Pets</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+    <link rel="stylesheet" href="styles/pets.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏠 Home4Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pets.html" class="active">Pets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switcher">
+                <button onclick="switchTheme('theme1')">🌞 Light</button>
+                <button onclick="switchTheme('theme2')">🌚 Dark</button>
+                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pets-header">
+            <div class="container">
+                <h2>Meet Our Pets 🐕🐈</h2>
+                <p>All our pets are looking for their forever homes. Could you be their perfect match?</p>
+                
+                <div class="view-options">
+                    <button class="view-btn active" onclick="changeView('grid')">🟦 Grid View</button>
+                    <button class="view-btn" onclick="changeView('list')">🟫 List View</button>
+                </div>
+                
+                <form class="search-form">
+                    <input type="text" placeholder="Search by name, breed, or age...">
+                    <select>
+                        <option value="">All Types</option>
+                        <option value="dog">Dogs</option>
+                        <option value="cat">Cats</option>
+                    </select>
+                    <select>
+                        <option value="">All Ages</option>
+                        <option value="puppy">Puppy/Kitten (0-1 year)</option>
+                        <option value="young">Young (1-3 years)</option>
+                        <option value="adult">Adult (3-7 years)</option>
+                        <option value="senior">Senior (7+ years)</option>
+                    </select>
+                    <button type="submit">🔍 Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="pets-listing grid-view">
+            <div class="container">
+                <div class="pet-card">
+                    <img src="images/dog2.jpg" alt="Buddy the Labrador">
+                    <h3>Buddy</h3>
+                    <p>🐕 Labrador Retriever</p>
+                    <p>📍 2 years old</p>
+                    <a href="pet-details.html?id=1" class="btn">View Details</a>
+                </div>
+                <div class="pet-card">
+                    <img src="images/cat2.jpg" alt="Luna the Siamese">
+                    <h3>Luna</h3>
+                    <p>🐈 Siamese</p>
+                    <p>📍 1 year old</p>
+                    <a href="pet-details.html?id=2" class="btn">View Details</a>
+                </div>
+                <div class="pet-card">
+                    <img src="images/dog3.jpg" alt="Rocky the Bulldog">
+                    <h3>Rocky</h3>
+                    <p>🐕 Bulldog</p>
+                    <p>📍 3 years old</p>
+                    <a href="pet-details.html?id=3" class="btn">View Details</a>
+                </div>
+                <div class="pet-card">
+                    <img src="images/cat3.jpg" alt="Oliver the Tabby">
+                    <h3>Oliver</h3>
+                    <p>🐈 Tabby</p>
+                    <p>📍 4 years old</p>
+                    <a href="pet-details.html?id=4" class="btn">View Details</a>
+                </div>
+                <div class="pet-card">
+                    <img src="images/dog4.jpg" alt="Daisy the Beagle">
+                    <h3>Daisy</h3>
+                    <p>🐕 Beagle</p>
+                    <p>📍 5 years old</p>
+                    <a href="pet-details.html?id=5" class="btn">View Details</a>
+                </div>
+                <div class="pet-card">
+                    <img src="images/cat4.jpg" alt="Milo the Persian">
+                    <h3>Milo</h3>
+                    <p>🐈 Persian</p>
+                    <p>📍 2 years old</p>
+                    <a href="pet-details.html?id=6" class="btn">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagination">
+            <div class="container">
+                <button disabled>⬅️ Previous</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>Next ➡️</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
