@@ -67,6 +67,9 @@ nav ul li a.active {
     transition: all 0.3s ease;
     border: none;
 }
+.btn:hover{
+    transform: scale(1.05);
+}
 
 .theme-switcher {
     margin-left: auto;
@@ -89,12 +92,21 @@ footer {
 
 .footer-links {
     margin-top: 15px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .footer-links a {
     margin: 0 10px;
+    color: #78beff;
     text-decoration: none;
 }
+
+.footer-links a:hover {
+     color: #ff0000;
+     text-decoration: none;
+}
+
 
 /* Form styles */
 .form-group {
@@ -130,6 +142,11 @@ footer {
     margin-right: 10px;
 }
 
+
+.logo-icon {
+    vertical-align: middle;
+    margin-bottom: 11px;
+}
 /* Responsive design */
 @media (max-width: 768px) {
     header .container {

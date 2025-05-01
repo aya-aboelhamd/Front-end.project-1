@@ -90,7 +90,8 @@
 }
 
 .faq-answer.active {
-    padding: 15px 20px;
+    padding: 25px 20px;
+    margin-bottom: 15px;
     max-height: 500px;
 }
 

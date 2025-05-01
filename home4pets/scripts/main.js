@@ -175,6 +175,16 @@ function initFAQ() {
         }
     }
     
-    // Expose to global scope for HTML onclick
     window.toggleFaq = toggleFaq;
 }
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    Swal.fire({
+  title: 'home4pets',
+  text: 'Your request has been submitted',
+  icon: 'success',
+  timer: 2000,
+  showConfirmButton: false
+});
+
+  });

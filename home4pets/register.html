@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register - Home4Pets</title>
-    <link rel="stylesheet" href="styles/shared.css">
-    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
-    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/theme1.css" id="theme-style" />
+    <link rel="stylesheet" href="styles/register.css" />
+    <link rel="icon" href="images/icons/pets.png" type="image/png" />
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1>🏠 Home4Pets</h1>
+            <h1>
+                <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon" />
+                Home4Pets
+            </h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -25,7 +31,6 @@
             <div class="theme-switcher">
                 <button onclick="switchTheme('theme1')">🌞 Light</button>
                 <button onclick="switchTheme('theme2')">🌚 Dark</button>
-                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
             </div>
         </div>
     </header>
@@ -34,19 +39,22 @@
         <section class="register-section">
             <div class="container">
                 <div class="register-form-container">
-                    <h2>Create Your Account 🐾</h2>
+                    <h2>
+                        Create Your Account
+                        <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon" />
+                    </h2>
                     <form id="register-form">
                         <div class="form-group">
                             <label for="reg-name">Full Name</label>
-                            <input type="text" id="reg-name" name="name" required>
+                            <input type="text" id="reg-name" name="name" required />
                         </div>
                         <div class="form-group">
                             <label for="reg-email">Email</label>
-                            <input type="email" id="reg-email" name="email" required>
+                            <input type="email" id="reg-email" name="email" required />
                         </div>
                         <div class="form-group">
                             <label for="reg-phone">Phone Number</label>
-                            <input type="tel" id="reg-phone" name="phone" required>
+                            <input type="tel" id="reg-phone" name="phone" required />
                         </div>
                         <div class="form-group">
                             <label for="reg-address">Address</label>
@@ -54,7 +62,7 @@
                         </div>
                         <div class="form-group">
                             <label for="reg-password">Password</label>
-                            <input type="password" id="reg-password" name="password" required>
+                            <input type="password" id="reg-password" name="password" required />
                             <div class="password-hint">
                                 <p>Password must contain:</p>
                                 <ul>
@@ -66,20 +74,25 @@
                         </div>
                         <div class="form-group">
                             <label for="reg-confirm">Confirm Password</label>
-                            <input type="password" id="reg-confirm" name="confirm" required>
+                            <input type="password" id="reg-confirm" name="confirm" required />
                         </div>
                         <div class="form-group checkbox-group">
-                            <input type="checkbox" id="terms" name="terms" required>
-                            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                            <input type="checkbox" id="terms" name="terms" required />
+                            <label for="terms">I agree to the
+                                <a href="Terms & Conditions.html" class="Termsboxs">Terms of Service</a>
+                                and
+                                <a href="Privacy policy.html" class="Termsboxs">Privacy Policy</a></label>
                         </div>
                         <button type="submit" class="btn">Register</button>
                     </form>
-                    
+
                     <div class="login-link">
-                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                        <p>
+                            Already have an account? <a href="login.html">Login here</a>
+                        </p>
                     </div>
                 </div>
-                
+
                 <div class="register-benefits">
                     <h3>Why Register?</h3>
                     <ul>
@@ -89,23 +102,22 @@
                         <li>🎁 Access to special events and discounts</li>
                         <li>💌 Receive updates on pets you've viewed</li>
                     </ul>
-                    <img src="images/adoption-success.jpg" alt="Happy adoption story">
+                    <img src="images/icons/Happy pets.png" alt="Happy pets together" />
                 </div>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
-            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <h2 style="color: black">© 2023 Home4Pets. All rights reserved.</h2>
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="Privacy policy.html" target="_blank">Privacy Policy</a>
+                <a href="Terms & Conditions.html" target="_blank">Terms of Service</a>
+                <a href="contact.html" target="_blank">Contact Us</a>
             </div>
         </div>
     </footer>
-
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

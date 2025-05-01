@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="images/icons/pets.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>🏠 Home4Pets</h1>
+            <h1>
+                <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon"> Home4Pets
+            </h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -25,7 +28,6 @@
             <div class="theme-switcher">
                 <button onclick="switchTheme('theme1')">🌞 Light</button>
                 <button onclick="switchTheme('theme2')">🌚 Dark</button>
-                <button onclick="switchTheme('theme3')">🌈 Colorful</button>
             </div>
         </div>
     </header>
@@ -33,7 +35,7 @@
     <main>
         <section class="contact-hero">
             <div class="container">
-                <h2>Contact Us 📨</h2>
+                <h2>Contact Us <img src="images/icons/mail.png" alt="mail" width="45" height="45" style="vertical-align: middle; margin-bottom: 5px;"></h2>
                 <p>Have questions? Want to volunteer? We'd love to hear from you!</p>
             </div>
         </section>
@@ -41,15 +43,15 @@
         <section class="contact-methods">
             <div class="container">
                 <div class="contact-info">
-                    <h3>📞 Call Us</h3>
+                    <h3><img src="images/icons/telephone.png" alt="telephone" width="45" height="45" style="vertical-align: middle; margin-bottom: 5px;"> Call Us</h3>
                     <p>Main Office: (123) 456-7890</p>
                     <p>Adoption Line: (123) 456-7891</p>
                     
-                    <h3>✉️ Email Us</h3>
+                    <h3><img src="images/icons/mail.png" alt="mail" width="45" height="45" style="vertical-align: middle; margin-bottom: 5px;"> Email Us</h3>
                     <p>General Inquiries: info@home4pets.com</p>
                     <p>Adoptions: adopt@home4pets.com</p>
                     
-                    <h3>📍 Visit Us</h3>
+                    <h3><img src="images/icons/placeholder.png" alt="mail" width="45" height="45" style="vertical-align: middle; margin-bottom: 5px;"> Visit Us</h3>
                     <p>123 Pet Adoption Lane</p>
                     <p>Anytown, AT 12345</p>
                     <p>Open Monday-Saturday 9am-6pm</p>
@@ -88,7 +90,8 @@
 
         <section class="faq">
             <div class="container">
-                <h2>Frequently Asked Questions ❓</h2>
+                <h2>Frequently Asked Questions <img src="images/icons/faq.png" alt="faq" width="45" height="45" style="vertical-align: middle; margin-bottom: 5px;">
+                </h2></h2>
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFaq(this)">What are your adoption fees?</button>
                     <div class="faq-answer">
@@ -113,15 +116,15 @@
 
     <footer>
         <div class="container">
-            <p>© 2023 Home4Pets. All rights reserved.</p>
+            <h2 style="color: black;">© 2023 Home4Pets. All rights reserved.</h2>
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="Privacy policy.html" target="_blank">Privacy Policy</a>
+                <a href="Terms & Conditions.html" target="_blank">Terms of Service</a>
+                <a href="contact.html" target="_blank">Contact Us</a>
             </div>
         </div>
     </footer>
-
     <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
