@@ -33,15 +33,6 @@
     text-decoration: none;
 }
 
-.social-login {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.social-login p {
-    margin-bottom: 15px;
-}
-
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -69,14 +60,47 @@
     text-decoration: none;
 }
 
+.btn-link {
+     display: inline-block;
+     padding: 8px 16px;
+     background-color: #3cff00;
+     color: white;
+     text-decoration: none;
+     border-radius: 26px;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+     cursor: pointer;
+ }
+ .btn-link:hover {
+     background-color: #a04545;
+    transform: scale(1.05);
+ }
+
+
+.Forgotbtn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+.Forgotbtn-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
 .login-benefits {
     padding: 30px;
 }
 
 .login-benefits h3 {
-    font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--primary-color);
 }
 
 .login-benefits ul {
@@ -99,9 +123,8 @@
 }
 
 .login-benefits img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
+    width: 50%;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
