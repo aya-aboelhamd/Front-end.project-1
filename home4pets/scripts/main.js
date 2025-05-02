@@ -216,4 +216,13 @@ document
       timer: 2000,
       showConfirmButton: false,
     });
+  }); 
+document
+      .getElementById("login-form")
+      .addEventListener("submit", function(event) {
+       event.preventDefault();
+       const username = document.getElementById("login-email");
+       const password = document.getElementById("login-password");
+       window.location.href = "index.html";
   });
+   
