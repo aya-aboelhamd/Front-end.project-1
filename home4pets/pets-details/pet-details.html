@@ -6,7 +6,7 @@
     <title>Pet Details - Home4Pets</title>
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/theme1.css" id="theme-style">
-    <link rel="stylesheet" href="../styles/pet-details.css">
+    <link rel="stylesheet" href="pet-details.css">
 
     <link rel="icon" href="../images/icons/pets.png" type="image/png">
 </head>
@@ -41,6 +41,12 @@
                 <div class="pet-images">
                     <div class="main-image">
                         <img src="../images/dog1.jpg" alt="Buddy the Labrador" id="main-pet-image">
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls muted>
+                            <source src="../videos/dog1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
                 <div class="pet-info">
@@ -129,6 +135,7 @@
         </div>
     </footer>
 
+    <script src="pet-details.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
