@@ -74,16 +74,29 @@ nav ul li a.active {
 .theme-switcher {
     margin-left: auto;
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .theme-switcher button {
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 8px;
     cursor: pointer;
-    border: none;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
     font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.theme-switcher button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.theme-switcher button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
 
 footer {
     padding: 30px 0;
