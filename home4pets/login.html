@@ -45,7 +45,7 @@
                     <form id="login-form">
                         <div class="form-group">
                             <label for="login-email">Email</label>
-                            <input type="email" id="login-email" name="email" required>
+                            <input type="email" id="login-email" name="email" required autofocus>
                         </div>
                         <div class="form-group">
                             <label for="login-password">Password</label>
@@ -99,20 +99,17 @@
                     icon: "success",
                     timer: 2000,
                     showConfirmButton: false,
+
+                didClose: () => {
+                        window.location.href = "index.html";
+                    }
+
                 });
+                
             });
 
     </script> 
-      <script>
-      document
-      .getElementById("login-form")
-      .addEventListener("submit", function(event) {
-       event.preventDefault();
-       const username = document.getElementById("login-email");
-       const password = document.getElementById("login-password");
-       window.location.href = "index.html";
-  });
-   </script>
+
 </body>
 
 </html>

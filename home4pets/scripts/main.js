@@ -166,7 +166,6 @@ function initPasswordValidation() {
         return false;
       }
 
-      alert("Registration successful! You can now login.");
       return true;
     });
 }
@@ -216,7 +215,10 @@ document
       timer: 2000,
       showConfirmButton: false,
     });
-  }); 
+  });
+
+
+
 document
       .getElementById("login-form")
       .addEventListener("submit", function(event) {
