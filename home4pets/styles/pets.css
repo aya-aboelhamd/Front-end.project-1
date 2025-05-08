@@ -1,4 +1,18 @@
 /* Pets Page Specific Styles */
+header {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--header-bgp);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-colorp);
+    color: var(--text-color);
+}
 .pets-header {
     padding: 60px 0 30px;
     text-align: center;
@@ -120,6 +134,12 @@
     background-color: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
+}
+footer {
+    background-color: var(--footer-bgp);
+    border-top: 1px solid var(--border-color);
+    padding: 20px 0;
+    text-align: center;
 }
 
 @media (max-width: 768px) {

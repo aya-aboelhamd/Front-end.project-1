@@ -1,8 +1,21 @@
+header {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--header-bgf);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 body {
   height: 100%;
   margin: 0;
 }
-
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-colorf);
+    color: var(--text-color);
+}
 body {
   display: flex;
   flex-direction: column;
@@ -131,4 +144,10 @@ main {
 .forgot-password-section {
   width: 100%;
   padding: 60px 0;
+}
+footer {
+    background-color: var(--footer-bgf);
+    border-top: 1px solid var(--border-color);
+    padding: 20px 0;
+    text-align: center;
 }
