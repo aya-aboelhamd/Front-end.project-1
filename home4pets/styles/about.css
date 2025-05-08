@@ -1,4 +1,18 @@
 /* About Page Specific Styles */
+header {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--header-bga);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-colora);
+    color: var(--text-color);
+}
 .about-hero {
     padding: 80px 0;
     text-align: center;
@@ -96,4 +110,10 @@ tr:hover {
     th, td {
         padding: 8px 10px;
     }
+}
+footer {
+    background-color: var(--footer-bga);
+    border-top: 1px solid var(--border-color);
+    padding: 20px 0;
+    text-align: center;
 }
