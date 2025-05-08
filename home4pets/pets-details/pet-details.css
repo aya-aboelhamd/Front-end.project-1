@@ -1,118 +1,109 @@
 .pet-details .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px;
-    align-items: flex-start;
-  }
-  
-  .pet-images {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: relative;
-  }
-  
-  .main-image img,
-  .video-wrapper video {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-    object-fit: cover;
-    pointer-events: none;
-  }
-  
-  .video-wrapper {
-    max-width: 400px;
-    overflow: hidden;
-    border-radius: 10px;
-    pointer-events: none;
-  }
-  
-  .pet-info {
-    flex: 2 1 400px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  .pet-info, .pet-info h2, .pet-info h3, .pet-info p, .pet-info ul, .pet-info li {
-    color: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  align-items: flex-start;
 }
-  .pet-info h2 {
-    font-size: 28px;
-    margin-bottom: 5px;
-  }
-  
-  .details-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-    margin: 15px 0;
-  }
-  
-  .description, .care-info {
-    margin-top: 15px;
-  }
-  
-  .care-info ul {
-    padding-left: 20px;
-  }
-  
-  .btn {
-    background-color: #ff8c42;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #ff702e;
-  }
-  
-  /* Adoption form */
-  #adoption-form {
-    margin-top: 40px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.6s ease-in-out;
-  }
-  
-  #adoption-form.show {
-    display: block !important;
-  }
-  
-  #adoption-form h2 {
-    margin-bottom: 20px;
-  }
-  
-  #adoption-form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  #adoption-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  #adoption-form input,
-  #adoption-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+
+.pet-images {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.main-image img,
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.pet-info {
+  flex: 1 1 50%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pet-info h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.description, .care-info {
+  margin-top: 15px;
+}
+
+.care-info ul {
+  padding-left: 20px;
+}
+
+.btn {
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff702e;
+}
+
+#adoption-form {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#adoption-form.show {
+  display: block !important;
+}
+
+#adoption-form h2 {
+  margin-bottom: 20px;
+}
+
+#adoption-form .form-group {
+  margin-bottom: 20px;
+}
+
+#adoption-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#adoption-form input,
+#adoption-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
