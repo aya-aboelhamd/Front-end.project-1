@@ -1,115 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Home4Pets</title>
-    <link rel="stylesheet" href="styles/shared.css">
-    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="icon" href="images/icons/pets.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Home4Pets</title>
+  <link rel="stylesheet" href="styles/shared.css" />
+  <link rel="stylesheet" href="styles/theme1.css" id="theme-style" />
+  <link rel="stylesheet" href="styles/login.css" />
+  <link rel="icon" href="images/icons/pets.png" type="image/png" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>
-                <a href="index.html">
-                    <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon">
-                    Home4Pets
-                </a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="pets.html">Pets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html" class="active">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-            </nav>
-            <div class="theme-switcher">
-                <button onclick="switchTheme('theme1')">☀️ Light</button>
-                <button onclick="switchTheme('theme2')">🌙 Dark</button>
+  <header>
+    <div class="container">
+      <h1>
+        <a href="index.html">
+          <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon" />
+          Home4Pets
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pets.html">Pets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switcher">
+        <button onclick="switchTheme('theme1')">☀️ Light</button>
+        <button onclick="switchTheme('theme2')">🌙 Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <div class="container">
+        <div class="login-form-container">
+          <h2>
+            Login to Your Account
+            <img src="images/icons/lock.png" alt="lock" width="45" height="45" class="lock-icon" style="vertical-align: middle; margin-bottom: 5px;" />
+          </h2>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" name="email" required autofocus />
             </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" required />
+            </div>
+            <div class="form-options">
+              <label>
+                <input type="checkbox" name="remember" /> Remember me
+              </label>
+              <a href="forgot-password.html" class="Forgotbtn-link">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+          </form>
+          <div class="register-link">
+            <p>Don't have an account? <a href="register.html" class="btn-link">Register here</a></p>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section class="login-section">
-            <div class="container">
-                <div class="login-form-container">
-                    <h2>Login to Your Account <img src="images/icons/lock.png" alt="lock" width="45" height="45"
-                            class="lock-icon" style="vertical-align: middle; margin-bottom: 5px;"></h2>
-                    <form id="login-form">
-                        <div class="form-group">
-                            <label for="login-email">Email</label>
-                            <input type="email" id="login-email" name="email" required autofocus>
-                        </div>
-                        <div class="form-group">
-                            <label for="login-password">Password</label>
-                            <input type="password" id="login-password" name="password" required>
-                        </div>
-                        <div class="form-options">
-                            <label>
-                                <input type="checkbox" name="remember"> Remember me
-                            </label>
-                            <a href="forgot-password.html" class="Forgotbtn-link">Forgot password?</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
-                    </form>
-                    <div class="register-link">
-                        <p>Don't have an account? <a href="register.html" class="btn-link">Register here</a></p>
-                    </div>
-                </div>
-                <div class="login-benefits">
-                    <h3> login and : </h3>
-                    <ul>
-                        <li>❤️ Save your favorite pets</li>
-                        <li>📝 Track your adoption applications</li>
-                        <li>🔔 Get notified about new pets</li>
-                        <li>💬 Message our team directly</li>
-                    </ul>
-                    <img src="images/icons/Happy pets.png" alt="Happy pets together">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <h2 style="color: black;">© 2025 Home4Pets. All rights reserved.</h2>
-            <div class="footer-links">
-                <a href="Privacy policy.html" target="_blank">Privacy Policy</a>
-                <a href="Terms & Conditions.html" target="_blank">Terms of Service</a>
-                <a href="contact.html" target="_blank">Contact Us</a>
-            </div>
+        <div class="login-benefits">
+          <h3>Why Login?</h3>
+          <ul>
+            <li>❤️ Save your favorite pets</li>
+            <li>📝 Track your adoption applications</li>
+            <li>🔔 Get notified about new pets</li>
+            <li>💬 Message our team directly</li>
+          </ul>
+          <img src="images/icons/Happy pets.png" alt="Happy pets together" />
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="scripts/main.js"></script>
-    <script>
-        document
-            .getElementById("login-form")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
-                Swal.fire({
-                    title: "Home4Pets",
-                    text: "You have been logged in successfully.",
-                    icon: "success",
-                    timer: 2000,
-                    showConfirmButton: false,
+      </div>
+    </section>
+  </main>
 
-                didClose: () => {
-                        window.location.href = "index.html";
-                    }
+  <footer>
+    <div class="container">
+      <h2 style="color: black;">© 2025 Home4Pets. All rights reserved.</h2>
+      <div class="footer-links">
+        <a href="Privacy policy.html" target="_blank">Privacy Policy</a>
+        <a href="Terms & Conditions.html" target="_blank">Terms of Service</a>
+        <a href="contact.html" target="_blank">Contact Us</a>
+      </div>
+    </div>
+  </footer>
 
-                });
-                
-            });
+  <script src="scripts/main.js"></script>
 
-    </script> 
-
+  <!-- Custom Alert -->
+  <div id="custom-alert" class="custom-alert">
+    <div class="alert-box">
+      <h2>Home4Pets</h2>
+      <p>You have been logged in successfully.</p>
+      <button onclick="closeAlert()">OK</button>
+    </div>
+  </div>
 </body>
-
 </html>
