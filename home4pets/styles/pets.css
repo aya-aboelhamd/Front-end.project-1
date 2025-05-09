@@ -123,26 +123,6 @@ body {
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
-
-.pagination {
-    padding: 30px 0;
-    text-align: center;
-}
-
-.pagination button {
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 5px;
-    border: 1px solid var(--border-color);
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.pagination button.active {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
 footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     background-color: var(--footer-bgp);

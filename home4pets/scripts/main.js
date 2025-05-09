@@ -1,4 +1,3 @@
-// =================== Theme switching ===================
 function switchTheme(theme) {
   const oldTheme = document.getElementById("theme-style");
   if (oldTheme) oldTheme.remove();
@@ -12,7 +11,6 @@ function switchTheme(theme) {
   localStorage.setItem("preferredTheme", theme);
 }
 
-// =================== Testimonial Slider ===================
 function initTestimonialSlider() {
   const testimonials = document.querySelectorAll(".testimonial");
   let currentIndex = 0;
@@ -28,7 +26,6 @@ function initTestimonialSlider() {
   }, 3000);
 }
 
-// =================== View Switcher ===================
 function initViewSwitcher() {
   const petsListing = document.querySelector(".pets-listing");
   window.changeView = function (view, event) {
@@ -42,14 +39,12 @@ function initViewSwitcher() {
   };
 }
 
-// =================== Image Gallery ===================
 window.changeMainImage = function (src, alt) {
   const mainImage = document.getElementById("main-pet-image");
   mainImage.src = src;
   mainImage.alt = alt;
 };
 
-// =================== Password Validation ===================
 function initPasswordValidation() {
   const passwordInput = document.getElementById("reg-password");
   const registerForm = document.getElementById("register-form");
@@ -73,7 +68,6 @@ function initPasswordValidation() {
   });
 }
 
-// =================== FAQ ===================
 function initFAQ() {
   window.toggleFaq = function (button) {
     const faqItem = button.parentElement;
@@ -84,7 +78,6 @@ function initFAQ() {
   };
 }
 
-// =================== Search ===================
 function initPetSearch() {
   const form = document.getElementById("search-form");
   if (!form) return;
@@ -122,9 +115,7 @@ function initPetSearch() {
   });
 }
 
-// =================== Forms (Login - Contact - Forgot Password) ===================
 function initFormSubmissions() {
-  // Contact Form
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
@@ -151,7 +142,6 @@ function initFormSubmissions() {
     });
   }
 
-  // Forgot Password
   const forgotForm = document.getElementById("forgot-password-form");
   if (forgotForm) {
     forgotForm.addEventListener("submit", function (e) {
@@ -160,27 +150,25 @@ function initFormSubmissions() {
     });
   }
 
-// Login Form
-const loginForm = document.getElementById("login-form");
-if (loginForm) {
-  loginForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const alertBox = document.getElementById("custom-alert");
-    alertBox.style.display = "block";
-    setTimeout(() => {
-      alertBox.style.display = "none";
-      window.location.href = "index.html";
-    }, 1000);
-  });
+  const loginForm = document.getElementById("login-form");
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const alertBox = document.getElementById("custom-alert");
+      alertBox.style.display = "block";
+      setTimeout(() => {
+        alertBox.style.display = "none";
+        window.location.href = "index.html";
+      }, 1000);
+    });
+  }
 }
-}
-// =================== Close Alert Function ===================
+
 function closeAlert() {
   document.getElementById("custom-alert").style.display = "none";
 }
 window.closeAlert = closeAlert;
 
-// =================== Init on Load ===================
 document.addEventListener("DOMContentLoaded", function () {
   switchTheme(localStorage.getItem("preferredTheme") || "theme1");
   if (document.querySelector(".testimonial-slider")) initTestimonialSlider();
@@ -190,21 +178,18 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".faq-item")) initFAQ();
   if (document.getElementById("search-form")) initPetSearch();
   initFormSubmissions();
-/* register*/
 });
-        document
-            .getElementById("register-form")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
-                Swal.fire({
-                    title: "Home4Pets",
-                    text: "Congratulations! You have created an account on our website.",
-                    icon: "success",
-                    timer: 2000,
-                    showConfirmButton: false,
 
-                    didClose: () => {
-                        window.location.href = "login.html";
-                    }
-                });
-            });
+document.getElementById("register-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  Swal.fire({
+    title: "Home4Pets",
+    text: "Congratulations! You have created an account on our website.",
+    icon: "success",
+    timer: 2000,
+    showConfirmButton: false,
+    didClose: () => {
+      window.location.href = "login.html";
+    }
+  });
+});
