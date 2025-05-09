@@ -82,7 +82,8 @@ body {
 
 /* Features Section */
 .features {
-    padding: 60px 20px;
+    padding: 30px 10px;
+    margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
     text-align: center;
@@ -90,8 +91,28 @@ body {
 
 .features h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: var(--text-color);
+}
+
+.features .container {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.features video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+}
+
+.features video:hover {
+    transform: scale(1.02);
 }
 
 .feature-grid {
@@ -178,6 +199,7 @@ body {
 .testimonial cite {
     font-weight: bold;
 }
+
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
