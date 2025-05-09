@@ -1,4 +1,8 @@
 /* Home Page Specific Styles */
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
 header {
     padding: 10px 0;
     position: sticky;
