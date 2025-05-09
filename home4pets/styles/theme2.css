@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #6c757d;
+    --secondary-color: #495057;
+    --background-color: #212529;
+    --text-color: #f8f9fa;
+    --header-bg: #343a40;
+    --footer-bg: #343a40;
+    --card-bg: #495057;
+    --border-color: #6c757d;
+    --hover-color: #5a6268;
+    --active-color: #4e555b;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --background-colorc:#212529;
+    --header-bgc:#343a40;
+    --footer-bgc:#343a40;
+    --background-colora:#212529;
+    --header-bga:#343a40;
+    --footer-bga:#343a40;
+    --background-colorf:#212529;
+    --header-bgf:#343a40;
+    --footer-bgf:#343a40;
+    --background-colorl:#212529;
+    --header-bgl:#343a40;
+    --footer-bgl:#343a40;
+   --background-colorl:#212529;
+    --header-bgl:#343a40;
+    --footer-bgl:#343a40;
+   --background-colorp:#212529;
+    --header-bgp:#343a40;
+    --footer-bgp:#343a40;
+   --background-colorr:#212529;
+    --header-bgr:#343a40;
+    --footer-bgr:#343a40;
+}
