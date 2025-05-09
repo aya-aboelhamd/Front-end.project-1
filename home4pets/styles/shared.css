@@ -1,4 +1,9 @@
 /* Shared styles across all pages */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 * {
     margin: 0;
     padding: 0;
@@ -117,6 +122,9 @@ nav ul li a.active {
     --primary-color: #FF9800;
     --bg-button-color: #333;
     --text-color: #fff;
+}
+footer {
+margin-top: auto;
 }
 .footer-links {
     margin-top: 15px;
