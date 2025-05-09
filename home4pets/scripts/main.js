@@ -25,7 +25,7 @@ function initTestimonialSlider() {
   setInterval(() => {
     currentIndex = (currentIndex + 1) % testimonials.length;
     showTestimonial(currentIndex);
-  }, 5000);
+  }, 3000);
 }
 
 // =================== View Switcher ===================
