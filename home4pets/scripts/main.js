@@ -49,23 +49,6 @@ window.changeMainImage = function (src, alt) {
   mainImage.alt = alt;
 };
 
-// =================== Adoption Form ===================
-function initAdoptionForm() {
-  const form = document.getElementById("pet-adoption-form");
-  if (!form) return;
-
-  window.showAdoptionForm = function () {
-    form.style.display = "block";
-    window.scrollTo({ top: form.offsetTop - 20, behavior: "smooth" });
-  };
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Thank you for your adoption application! We will contact you soon.");
-    form.reset();
-  });
-}
-
 // =================== Password Validation ===================
 function initPasswordValidation() {
   const passwordInput = document.getElementById("reg-password");
