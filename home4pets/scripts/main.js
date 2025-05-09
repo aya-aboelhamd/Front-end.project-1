@@ -207,4 +207,21 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".faq-item")) initFAQ();
   if (document.getElementById("search-form")) initPetSearch();
   initFormSubmissions();
+/* register*/
 });
+        document
+            .getElementById("register-form")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+                Swal.fire({
+                    title: "Home4Pets",
+                    text: "Congratulations! You have created an account on our website.",
+                    icon: "success",
+                    timer: 2000,
+                    showConfirmButton: false,
+
+                    didClose: () => {
+                        window.location.href = "login.html";
+                    }
+                });
+            });
