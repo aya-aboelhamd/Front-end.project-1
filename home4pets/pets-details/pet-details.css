@@ -85,11 +85,13 @@ body {
 #adoption-form {
   margin-top: 40px;
   padding: 30px;
-  background-color: #fff;
+  background-color: var(--card-bg);
+  color: var(--text-color); 
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.6s ease-in-out;
 }
+
 
 #adoption-form.show {
   display: block !important;
@@ -122,6 +124,13 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+#adoption-form input,
+#adoption-form textarea {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
