@@ -2,140 +2,27 @@
   font-family: ibm;
   src: url(IBMPlexSerif-Medium.ttf);
 }
-header {
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--header-bgf);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-body {
-  height: 100%;
-  margin: 0;
-}
-body {
-    font-family: ibm;
-    line-height: 1.6;
-    background-color: var(--background-colorf);
-    color: var(--text-color);
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
-/* Forgot-password  Page Specific Styles */
 
-.forgot-password-section {
-  flex: 1 1 auto;
-  padding: 60px 0;
-}
-
-.forgot-password-section .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.forgot-password-form-container {
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px;
-  text-align: center;
-}
-
-.verfication-email-container input,
-.verfication-email-container select,
-.verfication-email-container textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  margin-bottom: 15px;
-}
-
-.form-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.form-options a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.social-btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.btn-link {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #3cff00;
-  color: white;
-  text-decoration: none;
-  border-radius: 26px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  cursor: pointer;
-  align-items: center;
-}
-.btn-link:hover {
-  background-color: #a04545;
-  transform: scale(1.05);
-}
-
-.forgot-footer {
-  flex: 0 0 auto;
-  background: #f0f0f0;
-  text-align: center;
-  padding: 30px 0;
-  border-top: 1px solid #ccc;
-}
-
-.forgot-footer-links {
-  margin-top: 15px;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.forgot-footer-links a {
-  margin: 0 10px;
-  color: #78beff;
-  text-decoration: none;
-}
-
-.forgot-footer-links a:hover {
-  color: #ff0000;
-  text-decoration: none;
-}
-
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  font-family: ibm;
+  line-height: 1.6;
+  background-color: var(--background-colorf);
+  color: var(--text-color);
 }
 
-body {
-  min-height: 100vh;
+header {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--header-bgf);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -147,11 +34,74 @@ main {
 
 .forgot-password-section {
   width: 100%;
+  flex: 1 1 auto;
   padding: 60px 0;
 }
+
+.forgot-password-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.forgott-password-container {
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  background-color: var(--card-bg);
+}
+
+.verfication-email-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #495057;
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color:var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 26px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a04545;
+  transform: scale(1.05);
+}
+
 footer {
-    background-color: var(--footer-bgf);
-    border-top: 1px solid var(--border-color);
-    padding: 20px 0;
-    text-align: center;
+  background-color: var(--footer-bgf);
+  border-top: 1px solid var(--border-color);
+  padding: 20px 0;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .forgot-password-section {
+    padding: 40px 0;
+  }
+
+  .forgott-password-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .verfication-email-container input {
+    padding: 8px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+  }
 }
