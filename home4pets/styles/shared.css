@@ -125,6 +125,7 @@ nav ul li a.active {
 }
 footer {
 margin-top: auto;
+color: var(--text-color);
 }
 .footer-links {
     margin-top: 15px;
