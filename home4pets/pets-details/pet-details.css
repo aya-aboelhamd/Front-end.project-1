@@ -3,13 +3,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--header-bg);
+    background-color: var(--header-bgpt);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: var(--background-color);
+    background-color: var(--background-colorpt);
     color: var(--text-color);
 }
 .pet-details .container {
@@ -119,7 +119,7 @@ body {
   border-radius: 8px;
 }
 footer {
-    background-color: var(--footer-bg);
+    background-color: var(--footer-bgpt);
     border-top: 1px solid var(--border-color);
     padding: 20px 0;
     text-align: center;
