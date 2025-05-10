@@ -23,7 +23,7 @@ body {
     
     padding: 80px 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/about-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     background-size: cover;
     background-position: center;
     color: white;
