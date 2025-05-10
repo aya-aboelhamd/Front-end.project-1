@@ -88,43 +88,42 @@ body {
 
 .list-view .pet-card {
   display: grid;
-  grid-template-columns: 150px 1fr auto;
+  grid-template-columns: 1fr 150px;
   gap: 20px;
   align-items: center;
   text-align: left;
-  background-color: var(--card-bgp);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.list-view .pet-card:hover {
+  transform: translateY(-5px);
 }
 
 .list-view .pet-card img {
   width: 150px;
   height: 150px;
-}
-
-.pet-card {
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.pet-card:hover {
-  transform: translateY(-5px);
-}
-
-.pet-card img {
-  width: 100%;
-  height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
-.pet-card h3 {
-  font-family: ibmmonolight;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+.pet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
+
+.pet-info span {
+  font-family: ibmmonolight;
+  font-size: 1.1rem;
+}
+
 .Headoftable {
   display: flex;
   justify-content: center;
@@ -132,10 +131,11 @@ body {
   height: 45px;
 }
 table {
+  background-color: white;
   justify-content: center;
   align-items: center;
   width: 50%;
-  border-collapse: collapse;
+  border-collapse: separate;
   margin-top: 30px;
 }
 th,
@@ -154,6 +154,14 @@ td:hover {
 .wordoffoot {
   text-align: center;
   font-weight: bold;
+}
+
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--footer-bgp);
+  border-top: 1px solid var(--border-color);
+  padding: 20px 0;
+  text-align: center;
 }
 
 footer {

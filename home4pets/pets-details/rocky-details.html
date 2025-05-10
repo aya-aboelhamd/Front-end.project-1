@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 
     <link rel="icon" href="../images/icons/pets.png" type="image/png">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -40,7 +42,7 @@
             <div class="container">
                 <div class="pet-images">
                     <div class="main-image">
-                        <img src="../images/rocky dog.jpg"  id="main-pet-image">
+                        <img src="../images/rocky dog.jpg" id="main-pet-image">
                     </div>
                 </div>
                 <div class="pet-info">
@@ -63,12 +65,14 @@
                             <p>black</p>
                         </div>
                     </div>
-                    
+
                     <div class="description">
                         <h3>Rocky</h3>
-                        <p>meet Rocky, our strong and loyal black dog! With his sleek black coat and confident personality, Rocky is sure to make a great companion. He’s protective, energetic, and always ready for an adventure</p>
+                        <p>meet Rocky, our strong and loyal black dog! With his sleek black coat and confident
+                            personality, Rocky is sure to make a great companion. He’s protective, energetic, and always
+                            ready for an adventure</p>
                     </div>
-                    
+
                     <div class="care-info">
                         <h3>Care Requirements</h3>
                         <ul>
@@ -78,12 +82,12 @@
                             <li>🐕 Gets along with other dogs</li>
                         </ul>
                     </div>
-                    
+
                     <button class="btn" onclick="showAdoptionForm()">Adopt Me! 🏡</button>
                 </div>
             </div>
         </section>
-        
+
         <section class="adoption-form" id="adoption-form" style="display: none;">
             <div class="container">
                 <h2>Adoption Application</h2>
@@ -106,31 +110,34 @@
                     </div>
                     <div class="form-group">
                         <label for="experience">Pet Experience</label>
-                        <textarea id="experience" name="experience" required placeholder="Tell us about your experience with pets"></textarea>
+                        <textarea id="experience" name="experience" required
+                            placeholder="Tell us about your experience with pets"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="home">Home Environment</label>
                         <textarea id="home" name="home" required placeholder="Describe your home and yard"></textarea>
                     </div>
-                    <button type="submit" class="btn">Submit Application</button>
+                    <center>
+                        <button type="submit" class="btn">Submit Application</button>
+                    </center>
                 </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>© 2025 Home4Pets. All rights reserved.</p>
+            <h2>© 2025 Home4Pets. All rights reserved.</h2>
             <div class="footer-links">
-                <a href="../Privacy policy.html">Privacy Policy</a>
-                <a href="../Terms & Conditions.html">Terms of Service</a>
-                <a href="../contact.html">Contact Us</a>
+                <a href="Privacy policy.html">Privacy Policy</a>
+                <a href="Terms & Conditions.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
             </div>
         </div>
     </footer>
 
     <script src="pet-details.js"></script>
+    <script src="../scripts/SwalLib.js"></script>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/"></script>
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -145,4 +152,5 @@
         themeLink.href = `../styles/${theme}.css`;
     }
 </script>
+
 </html>

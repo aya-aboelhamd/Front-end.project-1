@@ -1,16 +1,16 @@
 header {
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--header-bgpt);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--header-bgpt);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: var(--background-colorpt);
-    color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-colorpt);
+  color: var(--text-color);
 }
 .pet-details .container {
   display: flex;
@@ -58,7 +58,8 @@ body {
   margin: 15px 0;
 }
 
-.description, .care-info {
+.description,
+.care-info {
   margin-top: 15px;
 }
 
@@ -86,12 +87,11 @@ body {
   margin-top: 40px;
   padding: 30px;
   background-color: var(--card-bg);
-  color: var(--text-color); 
+  color: var(--text-color);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.6s ease-in-out;
 }
-
 
 #adoption-form.show {
   display: block !important;
@@ -119,10 +119,10 @@ body {
   border-radius: 8px;
 }
 footer {
-    background-color: var(--footer-bgpt);
-    border-top: 1px solid var(--border-color);
-    padding: 20px 0;
-    text-align: center;
+  background-color: var(--footer-bgpt);
+  border-top: 1px solid var(--border-color);
+  padding: 20px 0;
+  text-align: center;
 }
 #adoption-form input,
 #adoption-form textarea {
@@ -131,8 +131,13 @@ footer {
   border: 1px solid var(--border-color);
 }
 
-
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
