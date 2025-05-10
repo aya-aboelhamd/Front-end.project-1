@@ -120,6 +120,10 @@ body {
 .Termsboxs {
   text-decoration: none;
 }
+.Termsboxs:hover {
+  text-decoration: none;
+  color: red;
+}
 footer {
     background-color: var(--footer-bgr);
     border-top: 1px solid var(--border-color);
@@ -139,4 +143,28 @@ footer {
   .register-benefits {
     order: 1;
   }
+}
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.password-toggle:hover {
+    opacity: 0.7;
 }

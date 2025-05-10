@@ -44,7 +44,7 @@
             Login to Your Account
             <img src="images/icons/lock.png" alt="lock" width="45" height="45" class="lock-icon" style="vertical-align: middle; margin-bottom: 5px;" />
           </h2>
-          <form id="login-form">
+          <form id="login-form" method="post">
             <div class="form-group">
               <label for="login-email">Email</label>
               <input type="email" id="login-email" name="email" required autofocus />
@@ -90,16 +90,21 @@
       </div>
     </div>
   </footer>
-
+  <script src="scripts/SwalLib.js"></script>
   <script src="scripts/main.js"></script>
-
-  <!-- Custom Alert -->
-  <div id="custom-alert" class="custom-alert">
-    <div class="alert-box">
-      <h2>Home4Pets</h2>
-      <p>You have been logged in successfully.</p>
-      <button onclick="closeAlert()">OK</button>
-    </div>
-  </div>
+  <script>
+    document.getElementById("login-form")?.addEventListener("submit", e => {
+      e.preventDefault();
+      Swal.fire({
+        toast: true,
+        position: 'top',
+        icon: 'success',
+        title: 'Success! You have been logged in.',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true
+      }).then(() => location.href = "index.html");
+    });
+  </script>  
 </body>
 </html>

@@ -41,22 +41,26 @@
                 <h2>Meet Our Pets 🐾</h2>
                 <p>All our pets are looking for their forever homes. Could you be their perfect match?</p>
 
-                <form class="search-form" id="search-form">
-                    <input type="text" id="search-keyword" placeholder="Search by name, breed, or age...">
-                    <select id="search-type">
-                        <option value="">All Types</option>
-                        <option value="dog">Dogs</option>
-                        <option value="cat">Cats</option>
-                    </select>
-                    <select id="search-age">
-                        <option value="">All Ages</option>
-                        <option value="puppy">Puppy/Kitten (0-1 year)</option>
-                        <option value="young">Young (1-3 years)</option>
-                        <option value="adult">Adult (3-7 years)</option>
-                        <option value="senior">Senior (7+ years)</option>
-                    </select>
-                    <button type="submit">🔍 Search</button>
-                </form>
+                <div class="search-container">
+                    <form class="search-form" id="search-form" method="post">
+                        <div class="search-group">
+                            <input type="text" id="search-keyword" placeholder="Search by name, breed, or age...">
+                            <select id="search-type">
+                                <option value="">All Types</option>
+                                <option value="dog">Dogs</option>
+                                <option value="cat">Cats</option>
+                            </select>
+                            <select id="search-age">
+                                <option value="">All Ages</option>
+                                <option value="puppy">Puppy/Kitten (0-1 year)</option>
+                                <option value="young">Young (1-3 years)</option>
+                                <option value="adult">Adult (3-7 years)</option>
+                                <option value="senior">Senior (7+ years)</option>
+                            </select>
+                            <button type="submit">🔍 Search</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 

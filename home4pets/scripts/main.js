@@ -62,8 +62,33 @@ function initPasswordValidation() {
     const confirm = document.getElementById("reg-confirm").value;
 
     if (password !== confirm || password.length < 8 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
-      e.preventDefault();
-      alert("Passwords do not match or do not meet requirements!");
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      });
+
+      Toast.fire({
+        icon: 'error',
+        title: 'Invalid password! Please check the requirements.'
+      });
+    } else {
+      Swal.fire({
+        title: "Home4Pets",
+        text: "Congratulations! You have created an account on our website.",
+        icon: "success",
+        timer: 2000,
+        showConfirmButton: false,
+        didClose: () => {
+          window.location.href = "login.html";
+        }
+      });
     }
   });
 }
@@ -80,7 +105,6 @@ function toggleFaq(button) {
         icon.textContent = "-";
     }
 }
-
 
 function initPetSearch() {
   const form = document.getElementById("search-form");
@@ -144,14 +168,6 @@ function initFormSubmissions() {
     });
   }
 
-  const forgotForm = document.getElementById("forgot-password-form");
-  if (forgotForm) {
-    forgotForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Check your email to reset your password.");
-    });
-  }
-
   const loginForm = document.getElementById("login-form");
   if (loginForm) {
     loginForm.addEventListener("submit", function (e) {
@@ -192,6 +208,37 @@ document.getElementById("register-form").addEventListener("submit", function (ev
     showConfirmButton: false,
     didClose: () => {
       window.location.href = "login.html";
+    }
+  });
+});
+
+document.getElementById("forgot-password-form")?.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const verificationEmail = document.getElementById("verification-email");
+  if (verificationEmail?.value) {
+    Swal.fire({
+      title: "Home4Pets",
+      text: "Password reset instructions have been sent to your email.",
+      icon: "success", 
+      timer: 2000,
+      showConfirmButton: false,
+      didClose: () => {
+        window.location.href = "login.html";
+      }
+    });
+  } 
+});
+
+document.getElementById("contact-form-container")?.addEventListener("submit", function(event) {
+  event.preventDefault();
+  Swal.fire({
+    title: "Home4Pets", 
+    text: "Thank you for contacting us! We will get back to you soon.",
+    icon: "success",
+    timer: 2000,
+    showConfirmButton: false,
+    didClose: () => {
+      window.location.href = "index.html";
     }
   });
 });
