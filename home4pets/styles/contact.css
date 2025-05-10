@@ -71,18 +71,22 @@ body {
 
 .faq {
     padding: 60px 0;
+    background-color: var(--faq-bg);
 }
 
 .faq h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
+    color:var(--text-color);
 }
 
 .faq-item {
     margin-bottom: 15px;
     border-radius: 5px;
     overflow: hidden;
+    background-color:#fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .faq-question {
@@ -95,6 +99,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--background-colorc);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color:var(--background-colorc);
 }
 
 .faq-question::after {
@@ -111,6 +122,8 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .faq-answer.active {
@@ -118,6 +131,7 @@ body {
     margin-bottom: 15px;
     max-height: 500px;
 }
+
 
 @media (max-width: 768px) {
     .contact-methods .container {
