@@ -68,15 +68,19 @@ function initPasswordValidation() {
   });
 }
 
-function initFAQ() {
-  window.toggleFaq = function (button) {
-    const faqItem = button.parentElement;
-    const answer = faqItem.querySelector(".faq-answer");
+function toggleFaq(button) {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('.faq-icon');
 
-    faqItem.classList.toggle("active");
-    answer.style.maxHeight = faqItem.classList.contains("active") ? answer.scrollHeight + "px" : "0";
-  };
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+        icon.textContent = "+";
+    } else {
+        answer.style.display = "block";
+        icon.textContent = "-";
+    }
 }
+
 
 function initPetSearch() {
   const form = document.getElementById("search-form");
