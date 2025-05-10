@@ -111,18 +111,6 @@ nav ul li a.active {
     outline: none;
     box-shadow: 0 0 5px var(--primary-color);
 }
-
-:root[data-theme='light'] {
-    --primary-color: #5D4037;
-    --bg-button-color: #fff;
-    --text-color: #333;
-}
-
-:root[data-theme='dark'] {
-    --primary-color: #FF9800;
-    --bg-button-color: #333;
-    --text-color: #fff;
-}
 footer {
 margin-top: auto;
 color: var(--text-color);
