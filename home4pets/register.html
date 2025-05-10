@@ -45,7 +45,7 @@
                         Create Your Account
                         <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon" />
                     </h2>
-                    <form id="register-form">
+                    <form id="register-form" method="post">
                         <div class="form-group">
                             <label for="reg-name">Full Name</label>
                             <input type="text" id="reg-name" name="name" required autofocus />
@@ -60,7 +60,7 @@
                         </div>
                         <div class="form-group">
                             <label for="reg-address">Address</label>
-                            <textarea id="reg-address" name="address" required></textarea>
+                            <input type="text   " id="reg-address" name="address" required />
                         </div>
                         <div class="form-group">
                             <label for="reg-password">Password</label>
@@ -119,8 +119,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/SwalLib.js"></script>
     <script src="scripts/main.js"></script>
-
 </body>
 </html>
