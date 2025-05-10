@@ -52,23 +52,6 @@ body {
     text-decoration: none;
 }
 
-.social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-btn {
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
 .register-link {
     text-align: center;
     margin-top: 20px;
