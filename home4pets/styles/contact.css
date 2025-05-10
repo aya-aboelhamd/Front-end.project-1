@@ -71,7 +71,7 @@ body {
 
 .faq {
     padding: 40px 0;
-    background-color:var(--faq-bg);
+     background-color:var(--faq-bg);
     font-family: Arial, sans-serif;
 }
 
@@ -99,8 +99,8 @@ body {
     border: none;
     text-align: left;
     font-size: 18px;
-    cursor: pointer;
-    display: flex;
+     cursor: pointer;
+     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
