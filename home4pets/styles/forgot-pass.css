@@ -58,7 +58,6 @@ main {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
-  background-color: #495057;
   margin: 20px 0;
   color: var(--text-color);
 }
@@ -75,7 +74,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #a04545;
+  background-color: var(--primary-color);
   transform: scale(1.05);
 }
 
