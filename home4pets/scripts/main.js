@@ -92,22 +92,20 @@ function initPetSearch() {
 
     petCards.forEach((card) => {
       const name = card.querySelector("h3").textContent.toLowerCase();
-      const breed = card.querySelector("p:nth-of-type(1)").textContent.toLowerCase();
+      const petType = card.querySelector("p:nth-of-type(1)").textContent.toLowerCase();
       const ageText = card.querySelector("p:nth-of-type(2)").textContent;
       let show = true;
 
-      if (keyword && !name.includes(keyword) && !breed.includes(keyword)) show = false;
-      if (type && !breed.includes(type)) show = false;
+      if (keyword && !name.includes(keyword)) show = false;
+      if (type && petType !== type && type !== "") show = false;
 
       const ageMatch = ageText.match(/(\d+)/);
       if (ageGroup && ageMatch) {
         const age = parseInt(ageMatch[1]);
-        if ((ageGroup === "puppy" && age > 1) ||
-            (ageGroup === "young" && (age < 1 || age > 3)) ||
-            (ageGroup === "adult" && (age < 3 || age > 7)) ||
-            (ageGroup === "senior" && age < 7)) {
-          show = false;
-        }
+        if (ageGroup === "puppy" && age > 1) show = false;
+        if (ageGroup === "young" && (age < 1 || age > 3)) show = false;
+        if (ageGroup === "adult" && (age < 3 || age > 7)) show = false;
+        if (ageGroup === "senior" && age < 7) show = false;
       }
 
       card.style.display = show ? "block" : "none";
