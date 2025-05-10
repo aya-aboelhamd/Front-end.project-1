@@ -169,7 +169,11 @@ if (forgotForm) {
       title: "Forgot Password",
       text: "Check your email to reset your password.",
       icon: "info",
-      confirmButtonText: "OK"
+      timer: 2000,
+                    showConfirmButton: false,
+                    didClose: () => {
+                        window.location.href = "login.html";
+                    }
     });
   });
 }
