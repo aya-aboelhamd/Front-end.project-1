@@ -116,6 +116,30 @@
             </div>
         </section>
     </main>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style>
+.swal2-popup-custom {
+    font-family: 'Arial', sans-serif;
+    padding: 2em;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", e => {
+  e.preventDefault();
+  Swal.fire({
+    icon: 'success',
+    title: 'home4pets',
+    text: 'we will contact you soon',
+    timer: 2000,
+    showConfirmButton: false
+  });
+  e.target.reset();
+});
+</script>
 
     <footer>
         <div class="container">
