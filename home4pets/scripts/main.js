@@ -161,13 +161,19 @@ function initFormSubmissions() {
     });
   }
 
-  const forgotForm = document.getElementById("forgot-password-form");
-  if (forgotForm) {
-    forgotForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Check your email to reset your password.");
+const forgotForm = document.getElementById("forgot-password-form");
+if (forgotForm) {
+  forgotForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    Swal.fire({
+      title: "Forgot Password",
+      text: "Check your email to reset your password.",
+      icon: "info",
+      confirmButtonText: "OK"
     });
-  }
+  });
+}
+
 
   const loginForm = document.getElementById("login-form");
   if (loginForm) {
