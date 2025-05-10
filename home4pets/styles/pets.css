@@ -131,6 +131,7 @@ body {
   height: 45px;
 }
 table {
+  color: black;
   background-color: white;
   justify-content: center;
   align-items: center;
