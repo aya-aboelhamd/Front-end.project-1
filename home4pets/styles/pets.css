@@ -90,6 +90,7 @@ body {
     gap: 20px;
     align-items: center;
     text-align: left;
+    background-color: var(--card-bgp);
 }
 
 .list-view .pet-card img {
@@ -103,7 +104,6 @@ body {
     text-align: center;
     transition: transform 0.3s ease;
     margin-bottom: 20px ;
-    
 }
 
 .pet-card:hover {
