@@ -1,5 +1,6 @@
 function switchTheme(theme) {
   const oldTheme = document.getElementById("theme-style");
+  if (oldTheme && oldTheme.href.includes(theme)) return;
   if (oldTheme) oldTheme.remove();
 
   const newTheme = document.createElement("link");
@@ -13,6 +14,7 @@ function switchTheme(theme) {
 
 function initTestimonialSlider() {
   const testimonials = document.querySelectorAll(".testimonial");
+  if (testimonials.length === 0) return;
   let currentIndex = 0;
 
   function showTestimonial(index) {
@@ -57,30 +59,41 @@ function initPasswordValidation() {
     document.getElementById("letter").style.color = /[a-zA-Z]/.test(value) ? "green" : "inherit";
   });
 
-  registerForm.addEventListener("submit", function (e) {
+  registerForm.addEventListener("submit", function (event) {
+    event.preventDefault();
     const password = passwordInput.value;
     const confirm = document.getElementById("reg-confirm").value;
 
     if (password !== confirm || password.length < 8 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
-      e.preventDefault();
       alert("Passwords do not match or do not meet requirements!");
+      return;
     }
+
+    Swal.fire({
+      title: "Home4Pets",
+      text: "Congratulations! You have created an account on our website.",
+      icon: "success",
+      timer: 2000,
+      showConfirmButton: false,
+      didClose: () => {
+        window.location.href = "login.html";
+      }
+    });
   });
 }
 
 function toggleFaq(button) {
-    const answer = button.nextElementSibling;
-    const icon = button.querySelector('.faq-icon');
+  const answer = button.nextElementSibling;
+  const icon = button.querySelector('.faq-icon');
 
-    if (answer.style.display === "block") {
-        answer.style.display = "none";
-        icon.textContent = "+";
-    } else {
-        answer.style.display = "block";
-        icon.textContent = "-";
-    }
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+    icon.textContent = "+";
+  } else {
+    answer.style.display = "block";
+    icon.textContent = "-";
+  }
 }
-
 
 function initPetSearch() {
   const form = document.getElementById("search-form");
@@ -106,10 +119,14 @@ function initPetSearch() {
       const ageMatch = ageText.match(/(\d+)/);
       if (ageGroup && ageMatch) {
         const age = parseInt(ageMatch[1]);
-        if (ageGroup === "puppy" && age > 1) show = false;
-        if (ageGroup === "young" && (age < 1 || age > 3)) show = false;
-        if (ageGroup === "adult" && (age < 3 || age > 7)) show = false;
-        if (ageGroup === "senior" && age < 7) show = false;
+        if (
+          (ageGroup === "puppy" && age > 1) ||
+          (ageGroup === "young" && (age < 1 || age > 3)) ||
+          (ageGroup === "adult" && (age < 3 || age > 7)) ||
+          (ageGroup === "senior" && age < 7)
+        ) {
+          show = false;
+        }
       }
 
       card.style.display = show ? "block" : "none";
@@ -175,23 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
   switchTheme(localStorage.getItem("preferredTheme") || "theme1");
   if (document.querySelector(".testimonial-slider")) initTestimonialSlider();
   if (document.querySelector(".pets-listing")) initViewSwitcher();
-  if (document.getElementById("pet-adoption-form")) initAdoptionForm();
   if (document.getElementById("register-form")) initPasswordValidation();
-  if (document.querySelector(".faq-item")) initFAQ();
   if (document.getElementById("search-form")) initPetSearch();
   initFormSubmissions();
-});
-
-document.getElementById("register-form").addEventListener("submit", function (event) {
-  event.preventDefault();
-  Swal.fire({
-    title: "Home4Pets",
-    text: "Congratulations! You have created an account on our website.",
-    icon: "success",
-    timer: 2000,
-    showConfirmButton: false,
-    didClose: () => {
-      window.location.href = "login.html";
-    }
-  });
 });
