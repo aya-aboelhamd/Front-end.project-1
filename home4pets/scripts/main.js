@@ -168,7 +168,7 @@ if (forgotForm) {
     Swal.fire({
       title: "Forgot Password",
       text: "Check your email to reset your password.",
-      icon: "info",
+      icon: "success",
       timer: 2000,
                     showConfirmButton: false,
                     didClose: () => {
