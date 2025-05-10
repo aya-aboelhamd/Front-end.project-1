@@ -123,6 +123,35 @@ body {
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
+ .Headoftable{ 
+     display: flex;
+     justify-content: center;  
+     align-items: center;      
+      height: 45px;          
+     background-color: #e7d0d7;
+ }  
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+th,td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+td:hover {
+    background-color: var(--hover-color);
+} 
+.wordoffoot {
+  text-align: center;
+  font-weight: bold;
+}
+
 footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     background-color: var(--footer-bgp);
