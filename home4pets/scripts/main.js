@@ -28,15 +28,8 @@ function initTestimonialSlider() {
 
 function initViewSwitcher() {
   const petsListing = document.querySelector(".pets-listing");
-  window.changeView = function (view, event) {
-    petsListing.classList.toggle("grid-view", view === "grid");
-    petsListing.classList.toggle("list-view", view !== "grid");
-
-    document
-      .querySelectorAll(".view-btn")
-      .forEach((btn) => btn.classList.remove("active"));
-    event.target.classList.add("active");
-  };
+  petsListing.classList.add("list-view");
+  petsListing.classList.remove("grid-view");
 }
 
 window.changeMainImage = function (src, alt) {

@@ -1,180 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Available Pets - Home4Pets</title>
-    <link rel="stylesheet" href="styles/shared.css">
-    <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
-    <link rel="stylesheet" href="styles/pets.css">
-    <link rel="icon" href="images/icons/pets.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Pets - Home4Pets</title>
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/theme1.css" id="theme-style">
+  <link rel="stylesheet" href="styles/pets.css">
+  <link rel="icon" href="images/icons/pets.png" type="image/png">
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>
-                <a href="index.html">
-                    <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon">
-                    Home4Pets
-                </a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="pets.html" class="active">Pets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-            </nav>
-            <div class="theme-switcher">
-                <button onclick="switchTheme('theme1')">☀️ Light</button>
-                <button onclick="switchTheme('theme2')">🌙 Dark</button>
-            </div>
+  <header>
+    <div class="container">
+      <h1>
+        <a href="index.html">
+          <img src="images/icons/pets.png" alt="pets" width="45" height="45" class="logo-icon">
+          Home4Pets
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pets.html" class="active">Pets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switcher">
+        <button onclick="switchTheme('theme1')">☀️ Light</button>
+        <button onclick="switchTheme('theme2')">🌙 Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pets-header">
+      <div class="container">
+        <h2>Meet Our Pets 🐾</h2>
+        <p>All our pets are looking for their forever homes. Could you be their perfect match?</p>
+        <form class="search-form" id="search-form">
+          <input type="text" id="search-keyword" placeholder="What are you looking for ...">
+          <select id="search-type">
+            <option value="">All Types</option>
+            <option value="dog">Dogs</option>
+            <option value="cat">Cats</option>
+          </select>
+          <select id="search-age">
+            <option value="">All Ages</option>
+            <option value="puppy">Puppy/Kitten (0-1 year)</option>
+            <option value="young">Young (1-3 years)</option>
+            <option value="adult">Adult (3-7 years)</option>
+            <option value="senior">Senior (7+ years)</option>
+          </select>
+          <button type="submit">🔍 Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="pets-listing list-view">
+      <div class="container">
+        <div class="pet-card">
+          <div class="pet-info">
+            <span><strong>Name:</strong> Buddy</span>
+            <span><strong>Type:</strong> Dog</span>
+            <span><strong>Age:</strong> 2 Years old</span>
+            <a href="pets-details/buddy-details.html" class="btn">View More Details</a>
+          </div>
+          <img src="images/buddy dog.jpg" alt="Buddy the Labrador">
         </div>
-    </header>
-
-    <main>
-        <section class="pets-header">
-            <div class="container">
-                <h2>Meet Our Pets 🐾</h2>
-                <p>All our pets are looking for their forever homes. Could you be their perfect match?</p>
-
-                <form class="search-form" id="search-form">
-                    <input type="text" id="search-keyword" placeholder="What are you looking for ...">
-                    <select id="search-type">
-                        <option value="">All Types</option>
-                        <option value="dog">Dogs</option>
-                        <option value="cat">Cats</option>
-                    </select>
-                    <select id="search-age">
-                        <option value="">All Ages</option>
-                        <option value="puppy">Puppy/Kitten (0-1 year)</option>
-                        <option value="young">Young (1-3 years)</option>
-                        <option value="adult">Adult (3-7 years)</option>
-                        <option value="senior">Senior (7+ years)</option>
-                    </select>
-                    <button type="submit">🔍 Search</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="pets-listing list-view">
-            <div class="container">
-                <div class="pet-card">
-                    <div class="pet-info">
-                        <span><strong>Name:</strong> Buddy</span>
-                        <span><strong>Type:</strong> Dog</span>
-                        <span><strong>Age:</strong> 2 Years old</span>
-                        <a href="pets-details/buddy-details.html" class="btn">View More Details</a>
-                    </div>
-                    <img src="images/buddy dog.jpg" alt="Buddy the Labrador">
-                </div>
-                <div class="pet-card">
-                    <div class="pet-info">
-                        <span><strong>Name:</strong> Luna</span>
-                        <span><strong>Type:</strong> Cat</span>
-                        <span><strong>Age:</strong> 1 Years old</span>
-                        <a href="pets-details/luna-details.html" class="btn">View More Details</a>
-                    </div>
-                    <img src="images/luna cat.jpg" alt="Luna the Siamese">
-                </div>
-                <div class="pet-card">
-                    <div class="pet-info">
-                        <span><strong>Name:</strong> Rocky</span>
-                        <span><strong>Type:</strong> Dog</span>
-                        <span><strong>Age:</strong> 3 Years old</span>
-                        <a href="pets-details/rocky-details.html" class="btn">View More Details</a>
-                    </div>
-                    <img src="images/rocky dog.jpg" alt="Rocky the Bulldog">
-                </div>
-                <div class="pet-card">
-                    <div class="pet-info">
-                        <span><strong>Name:</strong> Oliver</span>
-                        <span><strong>Type:</strong> Cat</span>
-                        <span><strong>Age:</strong> 4 Years old</span>
-                        <a href="pets-details/daisy-details.html" class="btn">View More Details</a>
-                    </div>
-                    <img src="images/oliver cat.jpg" alt="Oliver the Tabby">
-                </div>
-                <div class="pet-card">
-                    <div class="pet-info">
-                        <span><strong>Name:</strong> Daisy</span>
-                        <span><strong>Type:</strong> Cat</span>
-                        <span><strong>Age:</strong> 5 Years old</span>
-                        <a href="pets-details/daisy-details.html" class="btn">View More Details</a>
-                    </div>
-                    <img src="images/daisy cat.jpg" alt="Daisy the Beagle">
-                </div>
-                <div class="pet-card">
-                    <div class="pet-info">
-                        <span><strong>Name:</strong> Milo</span>
-                        <span><strong>Type:</strong> Dog</span>
-                        <span><strong>Age:</strong> 2 Years old</span>
-                        <a href="pets-details/milo-details.html" class="btn">View More Details</a>
-                    </div>
-                    <img src="images/milo dog.jpg" alt="Milo the Persian">
-                </div>
-
-            </div>
-        </section>
-    </main>
-    <h3 class="Headoftable">Number of souls 've been saved through 2025</h3>
-    <center>
-        <table class="petsstat">
-            <thead>
-                <tr>
-                    <th>Month</th>
-                    <th>Cats</th>
-                    <th>Dogs </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>JAN</td>
-                    <td>220</td>
-                    <td>200</td>
-                </tr>
-                <tr>
-                    <td>FEB</td>
-                    <td>280</td>
-                    <td>150</td>
-                </tr>
-                <tr>
-                    <td>MAR</td>
-                    <td>150</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>APR</td>
-                    <td>150</td>
-                    <td>90</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <Strong>
-                        <td class="wordoffoot" colspan="3">And still counting!</td>
-                    </Strong>
-                </tr>
-            </tfoot>
-        </table>
-    </center>
-
-    <footer>
-        <div class="container">
-            <h2>© 2025 Home4Pets. All rights reserved.</h2>
-            <div class="footer-links">
-                <a href="Privacy policy.html">Privacy Policy</a>
-                <a href="Terms & Conditions.html">Terms of Service</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
+        <div class="pet-card">
+          <div class="pet-info">
+            <span><strong>Name:</strong> Luna</span>
+            <span><strong>Type:</strong> Cat</span>
+            <span><strong>Age:</strong> 1 Years old</span>
+            <a href="pets-details/luna-details.html" class="btn">View More Details</a>
+          </div>
+          <img src="images/luna cat.jpg" alt="Luna the Siamese">
         </div>
-    </footer>
-    <script src="scripts/main.js"></script>
+        <div class="pet-card">
+          <div class="pet-info">
+            <span><strong>Name:</strong> Rocky</span>
+            <span><strong>Type:</strong> Dog</span>
+            <span><strong>Age:</strong> 3 Years old</span>
+            <a href="pets-details/rocky-details.html" class="btn">View More Details</a>
+          </div>
+          <img src="images/rocky dog.jpg" alt="Rocky the Bulldog">
+        </div>
+        <div class="pet-card">
+          <div class="pet-info">
+            <span><strong>Name:</strong> Oliver</span>
+            <span><strong>Type:</strong> Cat</span>
+            <span><strong>Age:</strong> 4 Years old</span>
+            <a href="pets-details/oliver-details.html" class="btn">View More Details</a>
+          </div>
+          <img src="images/oliver cat.jpg" alt="Oliver the Tabby">
+        </div>
+        <div class="pet-card">
+          <div class="pet-info">
+            <span><strong>Name:</strong> Daisy</span>
+            <span><strong>Type:</strong> Cat</span>
+            <span><strong>Age:</strong> 5 Years old</span>
+            <a href="pets-details/daisy-details.html" class="btn">View More Details</a>
+          </div>
+          <img src="images/daisy cat.jpg" alt="Daisy the Cat">
+        </div>
+        <div class="pet-card">
+          <div class="pet-info">
+            <span><strong>Name:</strong> Milo</span>
+            <span><strong>Type:</strong> Dog</span>
+            <span><strong>Age:</strong> 2 Years old</span>
+            <a href="pets-details/milo-details.html" class="btn">View More Details</a>
+          </div>
+          <img src="images/milo dog.jpg" alt="Milo the Dog">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <h3 class="Headoftable">Number of souls 've been saved through 2025</h3>
+  <center>
+    <table class="petsstat">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Cats</th>
+          <th>Dogs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>JAN</td>
+          <td>220</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>FEB</td>
+          <td>280</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>MAR</td>
+          <td>150</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>APR</td>
+          <td>150</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <strong>
+            <td class="wordoffoot" colspan="3">And still counting!</td>
+          </strong>
+        </tr>
+      </tfoot>
+    </table>
+  </center>
+
+  <footer>
+    <div class="container">
+      <h2>© 2025 Home4Pets. All rights reserved.</h2>
+      <div class="footer-links">
+        <a href="Privacy policy.html">Privacy Policy</a>
+        <a href="Terms & Conditions.html">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
 </body>
-
 </html>
