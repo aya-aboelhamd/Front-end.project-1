@@ -3,19 +3,19 @@
   src: url(IBMPlexSerif-Medium.ttf);
 }
 header {
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
-   padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--header-bgr);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--header-bgr);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 body {
-    font-family:ibm;
-    line-height: 1.6;
-    background-color: var(--background-colorr);
-    color: var(--text-color);
+  font-family: ibm;
+  line-height: 1.6;
+  background-color: var(--background-colorr);
+  color: var(--text-color);
 }
 .register-section {
   padding: 60px 0;
@@ -81,7 +81,7 @@ body {
   font-size: 12px;
 }
 .login-link :hover {
-  transform: scale(1.05) ;
+  transform: scale(1.05);
 }
 .register-benefits {
   padding: 70px;
@@ -124,10 +124,10 @@ body {
   color: red;
 }
 footer {
-    background-color: var(--footer-bgr);
-    border-top: 1px solid var(--border-color);
-    padding: 20px 0;
-    text-align: center;
+  background-color: var(--footer-bgr);
+  border-top: 1px solid var(--border-color);
+  padding: 20px 0;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -143,4 +143,3 @@ footer {
     order: 1;
   }
 }
-
