@@ -29,7 +29,6 @@ function initTestimonialSlider() {
 function initViewSwitcher() {
   const petsListing = document.querySelector(".pets-listing");
   petsListing.classList.add("list-view");
-  petsListing.classList.remove("grid-view");
 }
 
 window.changeMainImage = function (src, alt) {
