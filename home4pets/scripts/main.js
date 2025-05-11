@@ -152,7 +152,7 @@ function initPetSearch() {
         if (ageGroup === "senior" && age < 7) show = false;
       }
 
-      card.style.display = show ? "block" : "none";
+      card.style.display = show ? "flex" : "none";
     });
   });
 }
